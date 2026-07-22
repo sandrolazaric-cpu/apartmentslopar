@@ -195,14 +195,14 @@
   .lang-link:hover { color: var(--ink); }
   .lang-link.active { color: var(--ink); background: var(--sand); }
   .nav-cta {
-    padding: 10px 22px;
+    padding: 13px 26px;
     background: var(--ink);
     color: var(--paper);
     border-radius: 100px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.03em;
-    transition: background 0.2s;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   }
   .nav-cta:hover { background: var(--sea); }
   .menu-toggle {
@@ -295,22 +295,26 @@
   .hero-actions {
     display: flex;
     gap: 14px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    padding: 16px 30px;
+    flex: 0 0 auto;
+    min-width: 218px;
+    padding: 12px 30px;
     border-radius: 100px;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.02em;
-    transition: transform 0.2s, background 0.2s, color 0.2s;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     border: 1px solid transparent;
   }
   .btn-primary { background: var(--terracotta); color: var(--paper); }
-  .btn-primary:hover { background: #b56347; transform: translateY(-2px); }
+  .btn-primary:hover { background: #b56347; }
   .btn-secondary { background: transparent; color: var(--paper); border-color: rgba(250, 246, 239, 0.5); }
   .btn-secondary:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
   .btn svg { width: 14px; height: 14px; }
@@ -736,12 +740,11 @@
     color: var(--paper);
     font-size: 15px;
     font-weight: 500;
-    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   }
   .contact-cta:hover {
     background: rgba(250, 246, 239, 0.12);
     border-color: rgba(250, 246, 239, 0.3);
-    transform: translateY(-2px);
   }
   .contact-cta.primary {
     background: var(--terracotta);
@@ -993,7 +996,7 @@
           <p class="apt-tagline">Prostraniji apartman za obitelji i prijatelje</p>
           <div class="apt-capacity">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            Do 5 osoba
+            Do 4 osobe
           </div>
           <p class="apt-features-title">Apartmani</p>
           <ul class="apt-features"><li>Dvije spavaće sobe</li><li>Dnevni boravak s blagovaonom</li><li>Potpuno opremljena kuhinja</li><li>Kupaonica s tuš-kabinom</li><li>Balkon s pogledom prema vrtu i moru</li></ul>
